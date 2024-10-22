@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        form{ background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(/ca\ 3\ pic\ 2.avif);
+            background-repeat: no-repeat;
+            background-size: cover
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: cadetblue;
+            font-size:larger;}
+    </style>
+</head>
+<body>
+    <script>
+        function data()
+        {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            var d=document.getElementById("n4").value;
+            var e=document.getElementById("n5").value;
+            var f=document.getElementById("n6").value;
+            var g=document.getElementById("n7").value;
+            var h=document.getElementById("n8").value;
+            var i=document.getElementById("n9").value;
+            var j=document.getElementById("n10").value;
+          
+
+            //  if field is empty so show the console.error
+            if(a==""|| b==""|| c=="" || d=="" || e=="" || f=="" || g=="" || h=="" || i=="" || j=="" )
+        {
+            alert("All fields are mandatory");
+            return false;
+        }
+        else{
+            true;
+        }
+             
+        }
+    </script>
+<form onsubmit="return data()" action="/animation.html">
+        <marquee><h1 id="rh1" style="text-align: center;">Regestration Form</h1></marquee>
+        <fieldset>
+        <legend><h1>Form</h1></legend>
+        Name:
+        <input type="text" id="Name" placeholder="Name" id="n1"> 
+        <br><br>
+        Email: <input type="email" name="myemail" placeholder="Email" id="n2">
+        <br><br>
+        password: <input type="password" name="mypassword" placeholder="password" required id="n3"><br><br>
+        Number: <input type="number" name="mynumber" placeholder="number" required id="n4"><br><br>
+        Gender:   <input type="radio" name="mygender">  Male
+         <input type="radio" name="mygender" >Female
+         <input type="radio" name="mygender" required id="n5"><br><br>Other <br><br>
+        Hobbies: Reading <input type="checkbox" id="n6"> singing <input type="checkbox"><br><br>
+        <label for="country" >Country</label>
+        <select id="country " id="n7">
+            <option>select</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>England</option>
+            <option>South Africa</option>
+        </select>
+        <br><br>
+        
+        About Yourself: <br>
+        <textarea name="mytext" rows="5" cols="50" id="n9"></textarea>
+        <br><br>
+        Date: <input type="date" name="mydate" id="n10"><br><br>
+        <input type="submit" value="submit now ">&nbsp;&nbsp;
+        <input type="reset" value="reset form"
+    </fieldset>
+</form><br><br>
+</body>
+</html>

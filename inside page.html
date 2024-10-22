@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e59868241b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <body1>
+        
+            <div class="wrapper">
+                <form action"">
+                    <h1>LOGIN</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="username"
+                        required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="Password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forget password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account?<a
+                        href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </body1>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">NPT EDUCATORS</a></li>
+                    <li><a href="#">SYLLABUS</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="http://127.0.0.1:5500/animation.html">GREETINGS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu2.png"  id="menu">
+        </div>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    
+                }
+            }
+            
+
+        </script>
+        <!--footer-->
+
+        <section id="footer">
+            <img src="logo2.png.png"  class="footer-img">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>Join Our Community</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>24/7 service</h1>
+                    <p><i class="fa-solid fa-clock"></i>Live lectures time-9am to 2pm</p>
+                    <p><i class="fa-solid fa-face-smile"></i>Sunday- Have a Fun day!</p>
+                </div>
+                
+                <div class="footer-right">
+                    <h1>Get in Touch</h1>
+                    <p>#LPU BH6 FLOOR 9 <i class="fa-solid fa-location-dot"></i></p>
+                    <p>pacificastro17@gmail.com/nitinbiswas90@gmail.com<i class="fa-solid fa-paper-plane"></i></p>
+                    <p>+91 6969696969<i class="fa-solid fa-phone"></i></p>
+                </div>
+            </div>
+            <div class="social-links">
+               <a href="https:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a> 
+               <a href="https://www.instagram.com/nitin.biswas.90/"><i class="fa-brands fa-instagram"></i></a> 
+               <a href="https:www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a> 
+               <a href="https:www.youtube.com"><i class="fa-brands fa-youtube"></i></a> 
+                <p>Copyright NPT LEARNING.co</p>
+            </div>
+        </section>
+    </body>
+</html>
